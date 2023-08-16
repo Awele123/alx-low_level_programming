@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main -prints first 50 Fibonacci numbers, starting with 1 and 2
+ * main -Entry point of the program
  * Return: 0
  */
 
@@ -27,7 +27,7 @@ int main(void)
 		else
 		{
 			printf("\n");
-			return (0);
 		}
 	}
+	return (0);
 }
