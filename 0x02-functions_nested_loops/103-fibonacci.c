@@ -19,6 +19,6 @@ int main(void)
 		fib1 = fib2;
 		fib2 = fib3;
 	}
-	printf("Sum of even Fibonacci terms below 4,000,000: %d\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
