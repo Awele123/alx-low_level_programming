@@ -1,25 +1,33 @@
 #include <stdio.h>
 
 /**
- * main -Entry point
+ * main -Entry point of the program
  * Return: 0
  */
 
 int main(void)
 {
-	int i = 0;
-	unsigned long int a = 0, b = 1, next  = 0;
+	unsigned long int fib[98];
+	int i;
 
-	while (i < 98)
+	fib[0] = 1;
+	fib[1] = 2;
+
+	for (i = 2; i < 98; i++)
 	{
-		next = a + b;
-		a = b;
-		b = next;
-		printf("%lu", next);
-	if (i < 97)
-		printf(" , ");
-	i++;
+		fib[i] = fib[i - 1] + fib[i - 2];
 	}
-	putchar('\n');
+	for (i = 0; i < 98; i++)
+	{
+		printf("%lu", fib[i]);
+			if (i < 97)
+			{
+				printf(", ");
+			}
+			else
+			{
+				printf("\n");
+			}
+	}
 	return (0);
 }
