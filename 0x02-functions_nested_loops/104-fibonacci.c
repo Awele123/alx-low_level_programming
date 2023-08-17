@@ -22,7 +22,7 @@ int main(void)
 		printf("%lu", fib[i]);
 			if (i < 97)
 			{
-				printf(", ");
+				printf(" , ");
 			}
 			else
 			{
