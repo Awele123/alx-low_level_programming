@@ -17,17 +17,16 @@ int main(void)
 
 	for (d = 0; d < 100; d++)
 	{
-		pass[d] = rand() % 78;
+		pass[d] = rand() % 69;
 		zoom += (pass[d] + '0');
 		putchar(pass[d] + '0');
-		if ((2883 - zoom) - '0' < 78)
+		if ((2772 - zoom) - '0' < 69)
 		{
-			e = 2883 - zoom - '0';
+			e = 2772 - zoom - '0';
 			zoom += e;
 			putchar(e + '0');
 			break;
 		}
-		putchar('\n');
 	}
 
 	return (0);
