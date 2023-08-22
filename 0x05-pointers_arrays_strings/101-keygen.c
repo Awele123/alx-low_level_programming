@@ -22,7 +22,7 @@ int main(void)
 		putchar(pass[d] + '0');
 		if ((2883 - zoom) - '0' < 78)
 		{
-			e = 2772 - zoom - '0';
+			e = 2883 - zoom - '0';
 			zoom += e;
 			putchar(e + '0');
 			break;
