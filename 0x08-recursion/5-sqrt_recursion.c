@@ -8,21 +8,21 @@
  * @o: index
  * Return: result
  */
-int _sqrt(int n, int o);
+int _square_root(int n, int o);
 
 int _sqrt_recursion(int n)
 {
-	return (_sqrt(n, 1));
+	return (_square_root(n, 1));
 }
 
 /**
- * _sqrt -calculates natural square root
+ * _square_root -calculates natural square root
  * @n: number
  * @o: index
  * Return: result
  */
 
-int _sqrt(int n, int o)
+int _square_root(int n, int o)
 {
 	int sqrt = o * o;
 
@@ -33,6 +33,6 @@ int _sqrt(int n, int o)
 		return (o);
 	}
 	else
-		return (_sqrt(n, o + 1));
+		return (_square_root(n, o + 1));
 }
 
