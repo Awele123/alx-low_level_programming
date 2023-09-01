@@ -3,17 +3,20 @@
 #include <math.h>
 
 /**
- * _sqrt_recursion -returns the natural square root of a number
+ *  _sqrt_recursion -calculates square root of a number
  * @n: number
+ * @o: index
  * Return: result
  */
+int _sqrt(int n, int o);
 
 int _sqrt_recursion(int n)
 {
-	return (_sqrt(int n, int o));
+	return (_sqrt(n, 1));
 }
+
 /**
- * _square_root -calculates natural square root
+ * _sqrt -calculates natural square root
  * @n: number
  * @o: index
  * Return: result
