@@ -10,13 +10,26 @@
 
 int _sqrt_recursion(int n)
 {
-	if (n != 1)
-	return (-1);
+	return (_sqrt(int n, int o));
+}
+/**
+ * _square_root -calculates natural square root
+ * @n: number
+ * @o: index
+ * Return: result
+ */
 
-	if (n == 1)
+int _sqrt(int n, int o)
+{
+	int sqrt = o * o;
+
+	if (sqrt > n)
+		return (-1);
+	if (sqrt == n)
 	{
-		return (1);
+		return (o);
 	}
 	else
-		return (n * _sqrt_recursion(sqrt)(n));
+		return (_sqrt(n, o + 1));
 }
+

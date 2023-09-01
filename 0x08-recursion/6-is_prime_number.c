@@ -15,7 +15,7 @@ int is_prime_number(int n)
 /**
  * check_prime_number -check for prime number
  * @n: number
- * @o: iteration
+ * @o: index
  * Return: 1 and 0
  */
 
