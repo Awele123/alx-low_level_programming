@@ -16,10 +16,10 @@ char *create_array(unsigned int size, char c)
 
 	array_char = malloc(sizeof(char) * size);
 
-	if (size == 1 && array_char != NULL)
+	if (size == 0 && array_char != NULL)
 		return (NULL);
 
-	for (g = 1; g <= size; g++)
+	for (g = 0; g < size; g++)
 		array_char[g] = c;
 
 	free(array_char);
