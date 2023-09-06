@@ -42,4 +42,8 @@ char *argstostr(int ac, char **av)
 		str[c++] = '\n';
 	}
 	return (str);
+
+	free(str);
+
+	return (0);
 }

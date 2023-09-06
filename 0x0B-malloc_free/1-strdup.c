@@ -27,4 +27,8 @@ char *_strdup(char *str)
 	win[j] = '\0';
 
 	return (win);
+
+	free(win);
+
+	return (0);
 }
