@@ -30,7 +30,7 @@ int _strlen(char *s)
  */
 char *_strcpy(char *dest, char *src)
 {
-	int strlen, j;
+	int strlen, j = 0;
 
 	strlen = 0;
 
@@ -39,8 +39,9 @@ char *_strcpy(char *dest, char *src)
 		strlen++;
 	}
 
-	for (j = 0; j < strlen; j++)
+	while (j < strlen)
 	{
+		j++;
 		dest[j] = src[j];
 	}
 	dest[j] = '\0';
@@ -82,8 +83,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(d->name);
 		return (NULL);
 	}
-	_strcpy((*d).name, name);
-	_strcpy((*d).owner, owner);
+	_strcpy(d->name, name);
+	_strcpy(d->owner, owner);
 	(*d).age = age;
 
 	return (d);
