@@ -17,4 +17,10 @@ struct dog
  * @owner element 3
  */
 
+
+/**
+ * dog_t - typedef for struct dog
+*/
+typedef struct dog dog_t;
+
 #endif
