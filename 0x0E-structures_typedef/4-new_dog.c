@@ -60,7 +60,6 @@ char *_strcpy(char *dest, char *src)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
-	int t = 0;
 	int lent, lent1;
 
 	lent = _strlen(name);
