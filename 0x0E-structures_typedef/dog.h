@@ -9,4 +9,12 @@ struct dog
 	char *owner;
 };
 
+
+/**
+ * struct dog -dogs information
+ * @name: element 1
+ * @age: element 2
+ * @owner element 3
+ */
+
 #endif
