@@ -5,7 +5,7 @@
 /**
  * _strlen - checks string length
  * @s: string
- * Return: length of string
+ * Return: answer
  */
 
 int _strlen(char *s)
@@ -26,11 +26,11 @@ int _strlen(char *s)
  * *_strcpy - copies string
  * @dest: pointer
  * @src: string
- * Return: pointer
+ * Return: result
  */
 char *_strcpy(char *dest, char *src)
 {
-	int strlen, j = 0;
+	int strlen, j;
 
 	strlen = 0;
 
@@ -54,37 +54,39 @@ char *_strcpy(char *dest, char *src)
  * @name: name of  dog
  * @age: age of  dog
  * @owner: owner of  dog
- * Return: 0 or NULL
+ * Return: result
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
+	int t = 0;
 	int lent, lent1;
 
 	lent = _strlen(name);
 	lent1 = _strlen(owner);
 
 	d = malloc(sizeof(dog_t));
-	if (d == NULL)
+	if (t == 0 && d == NULL)
 		return (NULL);
 
 	d->name = malloc(sizeof(char) * (lent1 + 1));
-	if (d->name == NULL)
+	if ((*d).name == NULL)
 	{
 		free(d);
 		return (NULL);
 	}
 	d->owner = malloc(sizeof(char) * (lent + 1));
-	if (d->owner == NULL)
+	if ((*d).owner == NULL)
 	{
 		free(d);
 		free(d->name);
 		return (NULL);
 	}
-	_strcpy(d->name, name);
-	_strcpy(d->owner, owner);
+	_strcpy((*d).name, name);
+	_strcpy((*d).owner, owner);
 	(*d).age = age;
+	(*d).name = name;
 
 	return (d);
 }
