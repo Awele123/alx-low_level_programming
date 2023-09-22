@@ -9,12 +9,9 @@
 
 void free_list(list_t *head)
 {
-	list_t *pseudo = 0;
-
 	if (head)
 	{
-		pseudo = head->next;
-		free(head->str);
+		list_t *pseudo = head->next;
 		free(head);
 		head = pseudo;
 	}
