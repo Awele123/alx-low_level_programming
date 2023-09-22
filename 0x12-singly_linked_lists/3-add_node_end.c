@@ -18,7 +18,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	switch (str[0])
 	{
 		case '\0':
-			return NULL;
+			return (NULL);
 		default:
 	for (type = 0; str[type]; type++)
 
@@ -37,7 +37,9 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 
 	while (psudoe->next)
-	       	psudoe = psudoe->next;
+
+		psudoe = psudoe->next;
+
 	psudoe->next = edit;
 	}
 	return (edit);
