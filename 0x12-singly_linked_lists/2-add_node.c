@@ -19,7 +19,7 @@ list_t *add_node(list_t **head, const char *str)
 		case '\0':
 			break;
 		default:
-			while (str[type])
+			if (str[type])
 				type++;
 	edit = malloc(sizeof(list_t));
 	if (!edit)
