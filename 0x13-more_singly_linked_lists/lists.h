@@ -6,13 +6,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/**
- * struct listint_s - the singly linked list task
- * @n: integer
- * @head: pointer to first node
- * @next: pointer of adjacent node
- */
-
 typedef struct listint_s
 {
  int n;
