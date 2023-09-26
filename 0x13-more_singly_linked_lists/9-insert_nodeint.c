@@ -4,7 +4,7 @@
  * insert_nodeint_at_index - inserts a new node in listint_t list
  * @head: pointer of the first node
  * @idx: index
- * @n: changes 
+ * @n: changes
  * Return: pointer to the new node, or NULL
  */
 
