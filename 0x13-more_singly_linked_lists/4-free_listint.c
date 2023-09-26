@@ -1,9 +1,8 @@
 #include "lists.h"
-#include <stdio.h>
 
 /**
- * free_listint - function that frees a listint_t list.
- * @head: head ointer ti be freed
+ * free_listint - function that frees listint_t list
+ * @head: pointer to node 1
  */
 
 void free_listint(listint_t *head)
@@ -12,10 +11,8 @@ void free_listint(listint_t *head)
 
 	if (head)
 	{
-		g = head->next;
-		head = g;
+		g = (head)->next;
 		free(head);
-		while (!head)
-			free(head);
+		head = g;
 	}
 }
