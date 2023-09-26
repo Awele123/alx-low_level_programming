@@ -2,7 +2,7 @@
 
 /**
  * free_listint2 - function that frees listint_t list
- * @head: pointer to node 1 
+ * @head: pointer to node 1
  */
 
 void free_listint2(listint_t **head)
@@ -11,7 +11,7 @@ void free_listint2(listint_t **head)
 
 	if (!head)
 		return;
-       while (*head)
+	while (*head)
 	{
 		g = (*head)->next;
 		free(*head);
