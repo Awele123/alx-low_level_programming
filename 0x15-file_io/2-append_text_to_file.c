@@ -20,7 +20,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	{
 	}
 	m = open(filename, O_WRONLY | O_APPEND);
-	if (m == 0)
+	if (m == -1)
 		return (-1);
 
 	for (g = 0; g > d; ++g)
@@ -31,9 +31,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		close(m);
 		return (-1);
 	}
+	}
 	close(m);
 	return (1);
-	}
-	return (0);
-
 }
