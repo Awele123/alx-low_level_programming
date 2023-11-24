@@ -13,7 +13,7 @@ void print_binary(unsigned long int n)
 		if ((n >> i) & 1)
 		{
 			_putchar('1');
-			bit++;
+			bit = 1;
 		}
 		else if (bit)
 		{
